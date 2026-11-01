@@ -24,5 +24,7 @@ audio 48 828.125 Hz -> CIC4 /16 (3051.76 Hz) -> circular buffer + Hann window ->
 -> spectrum RAM -> Harmonic Product Spectrum (k = 80..580, i.e. 60-432 Hz) -> Hann ratio interpolation
 -> nearest note/string -> cents = 3462.468*(f-fn)/(f+fn). New reading about every 85 ms, window ~1.3 s.
 
-## note to run this project use the fft ip in the updated quartus prime with specification mentioned in the fft ip verilog
+## note
+Project execution requires the FFT IP created via the updated Quartus Prime, configured according to the specifications mentioned in the FFT IP Verilog.
+
 
